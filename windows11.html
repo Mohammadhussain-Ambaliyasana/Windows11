@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Windows 11</title>
+</head>
+
+<body>
+    <table class="displayicons">
+        <tr class="my iconclass">
+            <td>
+                <img src="media/this pc.png" alt="" class="computer iconimg"><br> This PC
+            </td>
+        </tr>
+        <tr class="recycle iconclass">
+            <td>
+                <br> <img src="media/recycle bin.png" alt="" class="bin iconimg"><br> Recycle Bin
+            </td>
+        </tr>
+        <tr class="gogle iconclass">
+            <td>
+                <br> <img src="media/chrome.png" alt="" class="chrome iconimg"><br> Google <br> Chrome
+            </td>
+        </tr>
+        <tr class="internet iconclass">
+            <td>
+                <br> <img src="media/internet explorer.png" alt="" class="explorer iconimg"><br> Internet <br> Explorer
+            </td>
+        </tr>
+        <tr class="imp iconclass">
+            <td>
+                <br> <img src="media/folder.png" alt="" class="folder iconimg"><br> Important <br> Folder
+            </td>
+        </tr>
+        <tr class="micro iconclass">
+            <td>
+                <br> <img src="media/edgeicon.png" alt="" class="edge iconimg"><br> Microsoft <br> Edge
+            </td>
+        </tr>
+
+    </table>
+
+
+    <div class="taskbar">
+        <img src="media/favicon.ico" class="windowsimg" id="windowsimg">
+        <img src="media/chrome.png" class="taschrome taskimgs">
+        <img src="media/photos.png" class="tasphotos taskimgs">
+        <img src="media/drive.png" class="tasdrive taskimgs">
+        <img src="media/edgeicon.png" class="tasedge taskimgs">
+        <img src="media/internet explorer.png" class="tasedge taskimgs">
+    </div>
+    <div class="menubg" id="menubg">
+        <div class="menu">
+            <p class="pinned">Pinned</p>
+            <table class="insidemenu">
+                <tr class="menurow chromerow">
+                    <td class="menutdo"><img src="media/chrome.png" alt="" class="menuchrome menuimg"><br>Chrome</td>
+                    <td class="menutdo"><img src="media/this pc.png" alt="" class="menucpc menuimg"><br>This PC</td>
+                    <td class="menutdo"><img src="media/recycle bin.png" alt="" class="menubin menuimg"><br>Recycle Bin</td>
+                    <td class="menutdo"><img src="media/edgeicon.png" alt="" class="menuedge menuimg"><br>Edge</td>
+                    <td class="menutdo"><img src="media/folder.png" alt="" class="menufolder menuimg"><br>Folder</td>
+                    <td class="menutdo"><img src="media/internet explorer.png" alt="" class="menuexplorer menuimg"><br>Explorer</td>
+                </tr>
+                <tr class="menurow googlerow">
+                    <td class="menutdt"><img src="media/folder.png" alt="" class="menufilt menuimg"><br>Documents</td>
+                    <td class="menutdt"><img src="media/photos.png" alt="" class="menuphotos menuimg"><br>Photos</td>
+                    <td class="menutdt"><img src="media/gmail.png" alt="" class="menumail menuimg"><br>G-Mail</td>
+                    <td class="menutdt"><img src="media/drive.png" alt="" class="menudrive menuimg"><br>Drive</td>
+                    <td colspan="2" class="menutdt">
+                        <div class="allaps">Explore All Apps <i class="fa fa-long-arrow-right fa-lg" aria-hidden="true"></i></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="hr">
+                <hr class="hr1">
+            </div>
+
+            <p class="recommended">Recommended</p>
+
+            <table class="recsec">
+                <tr class="rectro">
+                    <td class="rectdo"><img src="media/folder.png" alt="" class="menufilt menuimg">Windows SSD (C:)<br><span class="freeof">124 GB free of 256 GB</span></td>
+                    <td class="rectdo"><img src="media/folder.png" alt="" class="menufilt menuimg">Data (D:)<br><span class="freeof">254 GB free of 340 GB</span></td>
+                </tr>
+                <tr class="rectrt">
+                    <td class="rectdt"><img src="media/folder.png" alt="" class="menufilt menuimg">Data (E:)<br><span class="freeof">301 GB free of 340 GB</span></td>
+                    <td class="rectdt"><img src="media/folder.png" alt="" class="menufilt menuimg">Data (F:)<br><span class="freeof">340 GB free of 344 GB</span></td>
+                </tr>
+            </table>
+
+            <div class="hr">
+                <hr class="hr1">
+            </div>
+
+            <table class="footer">
+                <tr class="footertr">
+                    <td class="footertdo"> <img src="media/mypic.jpg" class="mypic"> Hey Mohammadhussain</td>
+                    <td class="footertdt"> <i class="fa fa-cog fa-2x" aria-hidden="true"></i> <a href="index.html" class="logout"><i class="fa fa-power-off fa-2x" aria-hidden="true"></i></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <video autoplay muted id="vid">
+        <source src="media/video.webm" type="video/webm">
+    </video>
+
+    <script>
+        let menubg = document.getElementById("menubg")
+        document.getElementById("windowsimg").addEventListener("click", () => {
+            // console.log("clicked");
+            if (menubg.style.bottom == "50px") {
+                menubg.style.bottom = "-600px"
+            } else {
+                menubg.style.bottom = "50px"
+            }
+        });
+    </script>
+
+</body>
+
+</html>
